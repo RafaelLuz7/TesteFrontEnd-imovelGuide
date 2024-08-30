@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Imóvel Guide - Apartamentos, Casas e Imóveis para Vender e Alugar </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    
+</head>
+<body>
+    <div id="fade" class="hide"></div>
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <div class="logo">
+                    <a href="#"><img src="imagens/logo-imovel-guide.png" alt="Logo"></a>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="#">Condomínios</a></li>
+                        <li><a href="#">Fórum</a></li>
+                        <li><a href="#">Guia</a></li>
+                        <li><a href="#">Artigos</a></li>
+                        <li><a href="#">Ferramentas</a></li>
+                      
+                    </ul>
+                    <ul>
+                        <li><a href="#">Condomínios</a></li>
+                        <li><a href="#">Fórum</a></li>
+                        <li><a href="#">Guia</a></li>
+                    </ul>
+                 
+                </nav>
+                <div class="cta">
+                    <a href="#" class="btn">CADASTRE-SE</a>
+                </div>
+                <div class="hamburger">
+                    &#9776;
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div id="main">
+        1<div class="task" id="task-telefone">
+            <div class="corretor-num">
+                <div class="img-corretor img1" style="background-image: url(imagens/mulher.jpg);">
+                    <div class="img-frontal" >
+                        <img src="imagens/mulher.jpg" class="imagem">
+                    </div>
+                </div>
+                <div class="descricao">
+                    <p class="nome">Nome Corretora </p>
+                    <p>3000 pontos</p>
+                    <p class="ver-telefone" >ver telefone</p>
+                    <span class="telefone"  data-telefone="(99) 9999-9999"></span>
+                </div>
+            </div>
+            <div class="corretor-num">
+                <div class="img-corretor img2" style="background-image: url(imagens/homem.jpg);">
+                    <div class="img-frontal" >
+                    <img src="imagens/homem.jpg" >
+                    </div>
+                </div>
+                <div class="descricao">
+                    <p class="nome">Nome Corretor</p>
+                    <p>1250 pontos</p>
+                    <p class="ver-telefone" >ver telefone</p>
+                    <span class="telefone"  data-telefone="(77) 7777-7777"></span>
+                </div>
+            </div>
+        </div>
+        2<div class="task" id="mascara-cpf">
+            <h2>
+                Mande uma mensagem:
+            </h2>
+            <div id="inputs">
+                <input type="text" class="mascara" id="txt_cpf" placeholder="Digite seu CPF" autocomplete="off" maxlength="14" onkeypress="if (!isNaN(String.fromCharCode(window.event.keyCode))) return true; else return false;">
+                <input type="tel" class="mascara" id="txt_telefone" placeholder="Digite seu telefone"  maxlength="15" onkeypress="if (!isNaN(String.fromCharCode(window.event.keyCode))) return true; else return false;">
+                <textarea cols="30" rows="5" class="mascara" placeholder="Digite o assunto"></textarea>
+            </div>
+            
+            <button id="btn-msg" onclick="msgAlerta()">Enviar Mensagem</button>
+            
+        </div>
+        3<div class="task" id="regra3">
+            <h2>
+                Regra de 3:
+            </h2>
+            <div class="linha1">
+                <input type="number" class="rg3" id="num1" placeholder="60" >
+                <hr style="height:2px;border-width:0;background-color:black">
+                <input type="number" class="rg3" id="num2" placeholder="100" >
+            </div>
+            <div class="linha2">
+                <input type="number" class="rg3" id="num3" placeholder="30" >
+                <hr style="height:2px;border-width:0;background-color:black">
+                <input type="text" class="rg3" id="resultadoRg3" readonly>
+            </div>
+            <button id="calcularRg3">Calcular</button>
+        </div>
+        4<div id="task-modal">
+            <div class="task" id="imagem-modal">
+                <img src="imagens/casa.png" id="img-modal">
+            </div>
+            <button id="abrir-modal">ABRIR IMAGEM NO MODAL</button>
+        </div>
+        5<div id="task-download">
+            <div class="task" id="download-img">
+                <img src="imagens/casa-download.png" id="capture">
+            </div>
+            <button id="btn-download">Download</button>
+        </div>
+        6<div class="task" id="zoom-load">
+            <img src="imagens/casa.png">
+        </div>
+    </div>
+   <div id="modal" class="hide">
+        <div id="modal-header">
+            <button id="fechar-modal"><img src="imagens/fechar.png" style="width: 24px; height: 24px;"></button>
+        </div>  
+        <div id="modal-body">
+            <img src="imagens/casa.png" alt="">
+        </div>
+   </div>
+    <script src="script.js"></script>
+</body>
+</html>
